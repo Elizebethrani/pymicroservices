@@ -1,0 +1,11 @@
+SET PATH=%PATH%;C:\Python372;C:\Python372\Scripts
+del "C:\Users\Elizabeth Rani\Downloads\PyMicroservices-master (2)\PyMicroservices-master\Source\python_tests_xml"\*.*
+del "C:\Users\Elizabeth Rani\Downloads\PyMicroservices-master (2)\PyMicroservices-master\Source\coverage.xml"
+cd "C:\Users\Elizabeth Rani\Downloads\PyMicroservices-master (2)\PyMicroservices-master\Source"
+REM c:\Users\nvmur\Appdata\Local\Programs\Python\Python37-32\python runtests.py
+REM c:\Users\nvmur\Appdata\Local\Programs\Python\Python37-32\python -m coverage run -m pytest && coverage xml -o coverage.xml
+REM c:\Users\nvmur\Appdata\Local\Programs\Python\Python37-32\python -m coverage html -d coverage
+python runtests.py
+python -m coverage run -m pytest && coverage xml -o coverage.xml
+copy "C:\Users\Elizabeth Rani\Downloads\PyMicroservices-master (2)\PyMicroservices-master\Source\python_tests_xml"\*.* "C:\Users\Elizabeth Rani\Downloads\PyMicroservices-master (2)\PyMicroservices-master\python_tests_xml"
+copy "C:\Users\Elizabeth Rani\Downloads\PyMicroservices-master (2)\PyMicroservices-master\Source\coverage.xml" "C:\Users\Elizabeth Rani\Downloads\PyMicroservices-master (2)\PyMicroservices-master"
